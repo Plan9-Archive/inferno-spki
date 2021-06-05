@@ -1,0 +1,22 @@
+test1=(cert
+  (issuer
+    (name
+      (public-key
+        (rsa-pkcs1-md5
+          (e #010001#)
+          (n
+          |AKIZRHmb9tOljedSUwph3JxK79OzEEuPlZmmEToqhUratcj6pp9TzL07NGWUT
+          XTKdFT559lM8QU0P6t3FV/uyIO3MTZJrFcUaiqs1I9IiwFpI5KyJisURaDzsf6
+          uC+luix+lHWTpI2+x6rwy6FxUuRrWKxyAmQ0uI38JvJSMcJrd|)))
+      Group3))
+  (subject
+    (public-key
+      (rsa-pkcs1-md5
+        (e #010001#)
+        (n
+          |AKd6zpHoNSq53rFFZ6XZV5m+YZKr1Ym9fUMuE8yHMOZx9AsrWqkZyMxZ9Cn5m
+          IPaTLqYEakoJ7lir25a/Nq1IpvFC8mlalpI2LINDRnIt3HbmiFEj97Eaqk2ffh
+          wXotFHIbPGyrgrMobOtWIpG56Ru5AK230lG68+ZyntCqB53v5|))))
+  (valid
+    (not-before "2003-01-01_00:00:00")
+    (not-after "2004-01-01_00:00:00")))

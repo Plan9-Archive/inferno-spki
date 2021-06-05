@@ -1,0 +1,12 @@
+Kbob friends <- Kbob Carol
+Kbob friends <- Kbob Alice
+Kbob friends <- Kbob Ted
+#? Kbob friends
+Kbob Carol <- Kcarol
+Kbob Alice <- Kted Alice
+Kted Alice <- Kalice
+Kbob Ted <- Kalice Ted
+Kalice Ted <- Kted
+? Kbob friends
+? Kbob Alice
+? Kbob Ted

@@ -1,0 +1,6 @@
+these files are copied into plan 9 port's src/cmd/auth/factotum
+then mk factotum.install to build and install it
+
+proto.c	include infauth as a protocol
+infauth.c	new
+mkfile	add infauth.$O

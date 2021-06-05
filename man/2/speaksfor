@@ -1,0 +1,64 @@
+.TH SPEAKSFOR 2
+.SH NAME
+speaksfor - creates a certificate representing one stage of a SPKI "speaks for"
+chain
+.SH SYNOPSIS
+.B spki/speaksfor 
+[
+.B -kp
+] 
+.B -s subject -i issuer 
+[
+.B -t tag
+] 
+[
+.B -b not valid before -a not valid after
+]
+[
+.B -m keyfs mount point
+]
+[
+.B -c certificate name used for keyfs
+]
+.SH DESCRIPTION
+.I Speaksfor
+constructs from the given arguments a SPKI certificate stating that S now speaks
+for I regarding T. This certificate is then signed with the issuer's public key,
+and written to 
+.I keyfs 
+by default. If the
+.B -p
+option is given, the certificate is printed to the screen.
+.PD
+.PP
+The arguments of
+.I speaksfor
+are interpreted as follows:
+.TF args
+.TP
+.B subject
+A public key which is the subject of the certificate. Currently, the name of a
+public key stored in keyfs.
+.TP
+.B issuer
+The issuer of the certificate. Currently, a file containing both public and
+private keys of the issuer. These may be Inferno keys if
+.B -k
+is specified, or else SPKI keys represented as S-expressions.
+.TP
+.B tag
+Optional argument which specifies for what the subject can speak for the issuer.
+By default, the subject may speak for the issuer regarding everything.
+.TP
+.B validity
+Optional validity of the certificate, represented as not-before and not-after
+dates in the format YYYY-MM-DD_HH:MM:SS. Currently both dates are required when
+specifying the validity.
+.PD
+.PP
+.SH SOURCE
+.B /appl/cmd/spki/speaksfor.b
+.SH SEE ALSO
+.IR spki (2)
+.IR sexprs (2)
+.IR keyfs (4)

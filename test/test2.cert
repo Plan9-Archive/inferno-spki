@@ -1,0 +1,25 @@
+(cert
+  (issuer
+    (public-key
+      (rsa-pkcs1-md5
+        (e #010001#)
+        (n
+          |AKIZRHmb9tOljedSUwph3JxK79OzEEuPlZmmEToqhUratcj6pp9TzL07NGWUT
+          XTKdFT559lM8QU0P6t3FV/uyIO3MTZJrFcUaiqs1I9IiwFpI5KyJisURaDzsf6
+          uC+luix+lHWTpI2+x6rwy6FxUuRrWKxyAmQ0uI38JvJSMcJrd|))))
+  (subject
+    (name (public-key
+      (rsa-pkcs1-md5
+        (e #010001#)
+        (n
+          |AKIZRHmb9tOljedSUwph3JxK79OzEEuPlZmmEToqhUratcj6pp9TzL07NGWUT
+          XTKdFT559lM8QU0P6t3FV/uyIO3MTZJrFcUaiqs1I9IiwFpI5KyJisURaDzsf6
+          uC+luix+lHWTpI2+x6rwy6FxUuRrWKxyAmQ0uI38JvJSMcJrd|)))
+	Group3))
+  (propagate)
+  (tag
+     (group (g3))
+     (role (* set (user (access read)) (admin (access (* set (read write) (*)))))))
+  (valid
+    (not-before "2003-01-01_00:00:00")
+    (not-after "2004-01-01_00:00:00")))

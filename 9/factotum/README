@@ -1,0 +1,8 @@
+these files are copied into plan 9's /sys/src/cmd/auth/factotum
+then mk factotum.safeinstall to build and install it
+
+dat.h	declare infauth
+fs.c	make infauth available
+infauth.c	new
+mkfile	add infauth.$O
+util.c	bug fix: use vsnprint not snprint
